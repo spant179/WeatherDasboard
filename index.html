@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <body>
+        <nav class="navbar navbar-dark bg-dark justify-content-center">
+            <span class="navbar-brand mb-0">Weather Dashboard</span>
+        </nav>
+
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <form>
+                    <h4>Search for a City:</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cityName" placeholder="Enter City Name">
+                        <div class="input-group-append">
+                        <button type="submit" id="submitCity" class="btn btn-primary fa fa-search"></button>
+                        <button id ="clear" class="btn btn-danger fa fa-trash"></button>
+                    </div>
+                </div>
+            </form>
+
+    <div id="pastCities" class="btn-group-vertical">
+    </div>
+    </div>
+    
+    <div class="col-md-9">
+        <div class="container" id="currentWeather">
+            <h2>Current Weather Here</h2>
+        </div>
+    <div>
+    
+    <h3>5-Day Forecast:</h3>
+        <div class="row" id="weatherForecast">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
